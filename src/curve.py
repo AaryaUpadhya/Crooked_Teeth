@@ -74,6 +74,7 @@ def sweep(config: str, repeat: int = 0):
                 "--save-result",
                 "--result-dir", "/results",
                 "--result-filename", f"{config}_rep{repeat}_rate{rate}.json",
+                "--percentile-metrics",  "ttft,tpot,itl,e2el",
                 
             ],
             check=True,
